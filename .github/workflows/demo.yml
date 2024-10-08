@@ -1,0 +1,15 @@
+name: demojob
+on: push
+jobs: 
+  demo:
+    name: demojob
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: checkout source code
+        uses: actions/checkout@v4
+
+      - name: look around
+        run: |
+          ls -la
+          whoami
+          pwd
